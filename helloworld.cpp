@@ -8,11 +8,26 @@
 // 按下 Ctrl + Shift + B 编译。
 
 #include <iostream>
-
+using namespace std;
 int main() {
-    // 在标准输出中打印 "Hello, world!"
-    std::cout << "Hello, world!" << std::endl;
+    int ans{42};
+    int x{0};
+    cin >> x;
+    while (x!=ans){
+        if (x>ans) {
+            cout << "Your guess is bigger than the answer." << endl;
+        }
+        if (x<ans) {
+            cout << "Your guess is smaller than the answer." << endl;
+        }
+        cin >> x;
+    }
+    cout << "Correct!" << endl;
 }
+
+
+
+
 
 // 此文件编译运行将输出 "Hello, world!"。
 // 按下 F6 后，你将在弹出的终端窗口中看到这一行字。
